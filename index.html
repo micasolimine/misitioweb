@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web personal de Micaela Solimine. Descubrí quién soy, mis habilidades y cómo contactarme.">
+  <title>Micaela Solimine - Publicista & Creativa Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Micaela Solimine</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Quién soy</h2>
+      <p>Soy licenciada en Publicidad, apasionada por la creatividad, el marketing digital y la evolución constante. Estoy aprendiendo SEO para potenciar mi perfil profesional y crear contenido que conecte.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Marketing digital</li>
+        <li>SEO & SEM</li>
+        <li>Contenido para redes sociales</li>
+        <li>Diseño UX/UI</li>
+        <li>Publicidad creativa</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="respuesta-formulario"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Micaela Solimine</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
