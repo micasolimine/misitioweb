@@ -1,144 +1,99 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sitio web personal de Micaela Solimine. Descubrí quién soy, mis habilidades y cómo contactarme.">
-  <title>Micaela Solimine - Publicista & Creativa Digital</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Micaela Solimine</h1>
-    <nav>
-      <ul>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="sobre-mi">
-      <h2>Quién soy</h2>
-      <p>Soy licenciada en Publicidad, apasionada por la creatividad, el marketing digital y la evolución constante. Estoy aprendiendo SEO para potenciar mi perfil profesional y crear contenido que conecte.</p>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Marketing digital</li>
-        <li>SEO & SEM</li>
-        <li>Contenido para redes sociales</li>
-        <li>Diseño UX/UI</li>
-        <li>Publicidad creativa</li>
-      </ul>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form id="formulario-contacto">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-      <p id="respuesta-formulario"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Micaela Solimine</p>
-  </footer>
-
-  <script src="script.js"></script>
-<!-- NUEVAS SECCIONES PARA SITIO WEB DE MICA -->
-
-<!-- 1. Servicios -->
-<section id="servicios">
-  <h2>Servicios</h2>
-  <p>Ofrezco servicios de <strong>marketing digital</strong>, <strong>estrategia de contenido</strong>, <strong>branding</strong> y <strong>gestión de proyectos creativos</strong>. Me especializo en la creación de contenido para <strong>redes sociales</strong> (TikTok, Reels, Shorts) y en aplicar <strong>inteligencia artificial en marketing</strong> para potenciar resultados.</p>
-</section>
-
-<!-- 2. Portfolio de Proyectos -->
-<section id="portfolio">
-  <h2>Portfolio de Proyectos</h2>
-  <p>Trabajé con marcas como <strong>Under Armour</strong>, <strong>Raízen</strong>, <strong>Disney</strong> y <strong>Nike</strong>, desarrollando campañas digitales y contenido visual. Algunos de mis trabajos incluyen landings para Amazon, campañas de redes sociales y branding.</p>
-</section>
-
-<!-- 3. Estrategias de Contenido -->
-<section id="estrategias">
-  <h2>Estrategias de Contenido</h2>
-  <p>Diseño estrategias de <strong>contenido digital</strong> para atraer y fidelizar audiencias. Me enfoco en contenidos <strong>creativos y de alto impacto</strong>, especialmente en <strong>formatos de video corto</strong> para redes sociales, usando herramientas como <strong>Notion</strong>, <strong>Figma</strong> y <strong>ChatGPT</strong>.</p>
-</section>
-
-<!-- 4. Consultoría y Capacitación -->
-<section id="consultoria">
-  <h2>Consultoría y Capacitación</h2>
-  <p>Ofrezco <strong>consultorías personalizadas</strong> y capacitaciones sobre <strong>inteligencia artificial aplicada al marketing digital</strong>. Fui tutora del curso de IA en Coderhouse y dicto clases sobre herramientas como <strong>Sora</strong>, <strong>Doppler</strong> y <strong>Canva</strong>.</p>
-</section>
-
-<!-- 5. Clientes y Marcas -->
-<section id="clientes">
-  <h2>Clientes & Marcas</h2>
-  <ul>
-    <li>Under Armour (AR)</li>
-    <li>Raízen Argentina</li>
-    <li>Disney Latam</li>
-    <li>Nike México</li>
-    <li>Jessica Cosmetics MX</li>
-    <li>L'Oréal Argentina</li>
-    <li>Conagra MX</li>
+<!-- Menú de navegación -->
+<nav style="position: fixed; top: 0; width: 100%; background: #fff; border-bottom: 1px solid #ccc; padding: 10px 20px; z-index: 1000;">
+  <ul style="list-style: none; display: flex; justify-content: center; gap: 20px; margin: 0; padding: 0;">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#estrategias">Estrategias</a></li>
+    <li><a href="#consultoria">Consultoría</a></li>
+    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#certificaciones">Certificaciones</a></li>
+    <li><a href="#herramientas">Herramientas</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contacto">Contacto</a></li>
   </ul>
-</section>
+</nav>
 
-<!-- 6. Certificaciones -->
-<section id="certificaciones">
-  <h2>Certificaciones y Formación</h2>
-  <ul>
-    <li>Curso SEO – Coderhouse (en curso)</li>
-    <li>Gestión de Proyectos Creativos – Domestika (2024)</li>
-    <li>Diseño UX/UI – Coderhouse (2022)</li>
-    <li>Google Analytics – Capacitarte UBA (2021)</li>
-  </ul>
-</section>
+<div style="margin-top: 80px; padding: 20px; font-family: sans-serif;">
 
-<!-- 7. Herramientas -->
-<section id="herramientas">
-  <h2>Herramientas que manejo</h2>
-  <p><strong>Gestión:</strong> Trello, Notion, Asana, Monday, Google Workspace.</p>
-  <p><strong>Diseño y Contenido:</strong> Figma, Canva, CapCut, Miro.</p>
-  <p><strong>IA:</strong> ChatGPT, Gemini, Sora, Copilot.</p>
-</section>
+  <!-- 1. Servicios -->
+  <section id="servicios" style="margin-bottom: 60px;">
+    <h2>Servicios</h2>
+    <p>Ofrezco servicios de <strong>marketing digital</strong>, <strong>estrategia de contenido</strong>, <strong>branding</strong> y <strong>gestión de proyectos creativos</strong>. Me especializo en la creación de contenido para <strong>redes sociales</strong> (TikTok, Reels, Shorts) y en aplicar <strong>inteligencia artificial en marketing</strong> para potenciar resultados.</p>
+  </section>
 
-<!-- 8. Testimonios -->
-<section id="testimonios">
-  <h2>Testimonios</h2>
-  <blockquote>“Trabajar con Mica fue un placer. Tiene una gran visión estratégica y sabe cómo llevar una idea a la acción de forma clara y creativa.”</blockquote>
-  <p>— Ex colega en HCS</p>
-</section>
+  <!-- 2. Portfolio de Proyectos -->
+  <section id="portfolio" style="margin-bottom: 60px;">
+    <h2>Portfolio de Proyectos</h2>
+    <p>Trabajé con marcas como <strong>Under Armour</strong>, <strong>Raízen</strong>, <strong>Disney</strong> y <strong>Nike</strong>, desarrollando campañas digitales y contenido visual. Algunos de mis trabajos incluyen landings para Amazon, campañas de redes sociales y branding.</p>
+  </section>
 
-<!-- 9. Blog / Tips -->
-<section id="blog">
-  <h2>Blog: Tips de IA y Marketing</h2>
-  <ul>
-    <li><a href="#">5 herramientas de IA para mejorar tu estrategia digital</a></li>
-    <li><a href="#">Cómo organizar equipos creativos remotos con Notion</a></li>
-    <li><a href="#">Usar ChatGPT para ideas de contenido en redes</a></li>
-  </ul>
-</section>
+  <!-- 3. Estrategias de Contenido -->
+  <section id="estrategias" style="margin-bottom: 60px;">
+    <h2>Estrategias de Contenido</h2>
+    <p>Diseño estrategias de <strong>contenido digital</strong> para atraer y fidelizar audiencias. Me enfoco en contenidos <strong>creativos y de alto impacto</strong>, especialmente en <strong>formatos de video corto</strong> para redes sociales, usando herramientas como <strong>Notion</strong>, <strong>Figma</strong> y <strong>ChatGPT</strong>.</p>
+  </section>
 
-<!-- 10. Contacto -->
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>¿Querés trabajar conmigo o saber más? Escribime a <a href="mailto:mica@email.com">mica@email.com</a> o contactame por <a href="https://www.linkedin.com/in/micasolimine/" target="_blank">LinkedIn</a>.</p>
-</section>
-</body>
-</html>
+  <!-- 4. Consultoría y Capacitación -->
+  <section id="consultoria" style="margin-bottom: 60px;">
+    <h2>Consultoría y Capacitación</h2>
+    <p>Ofrezco <strong>consultorías personalizadas</strong> y capacitaciones sobre <strong>inteligencia artificial aplicada al marketing digital</strong>. Fui tutora del curso de IA en Coderhouse y dicto clases sobre herramientas como <strong>Sora</strong>, <strong>Doppler</strong> y <strong>Canva</strong>.</p>
+  </section>
+
+  <!-- 5. Clientes y Marcas -->
+  <section id="clientes" style="margin-bottom: 60px;">
+    <h2>Clientes & Marcas</h2>
+    <ul>
+      <li>Under Armour (AR)</li>
+      <li>Raízen Argentina</li>
+      <li>Disney Latam</li>
+      <li>Nike México</li>
+      <li>Jessica Cosmetics MX</li>
+      <li>L'Oréal Argentina</li>
+      <li>Conagra MX</li>
+    </ul>
+  </section>
+
+  <!-- 6. Certificaciones -->
+  <section id="certificaciones" style="margin-bottom: 60px;">
+    <h2>Certificaciones y Formación</h2>
+    <ul>
+      <li>Curso SEO – Coderhouse (en curso)</li>
+      <li>Gestión de Proyectos Creativos – Domestika (2024)</li>
+      <li>Diseño UX/UI – Coderhouse (2022)</li>
+      <li>Google Analytics – Capacitarte UBA (2021)</li>
+    </ul>
+  </section>
+
+  <!-- 7. Herramientas -->
+  <section id="herramientas" style="margin-bottom: 60px;">
+    <h2>Herramientas que manejo</h2>
+    <p><strong>Gestión:</strong> Trello, Notion, Asana, Monday, Google Workspace.</p>
+    <p><strong>Diseño y Contenido:</strong> Figma, Canva, CapCut, Miro.</p>
+    <p><strong>IA:</strong> ChatGPT, Gemini, Sora, Copilot.</p>
+  </section>
+
+  <!-- 8. Testimonios -->
+  <section id="testimonios" style="margin-bottom: 60px;">
+    <h2>Testimonios</h2>
+    <blockquote>“Trabajar con Mica fue un placer. Tiene una gran visión estratégica y sabe cómo llevar una idea a la acción de forma clara y creativa.”</blockquote>
+    <p>— Ex colega en HCS</p>
+  </section>
+
+  <!-- 9. Blog / Tips -->
+  <section id="blog" style="margin-bottom: 60px;">
+    <h2>Blog: Tips de IA y Marketing</h2>
+    <ul>
+      <li><a href="#">5 herramientas de IA para mejorar tu estrategia digital</a></li>
+      <li><a href="#">Cómo organizar equipos creativos remotos con Notion</a></li>
+      <li><a href="#">Usar ChatGPT para ideas de contenido en redes</a></li>
+    </ul>
+  </section>
+
+  <!-- 10. Contacto -->
+  <section id="contacto" style="margin-bottom: 60px;">
+    <h2>Contacto</h2>
+    <p>¿Querés trabajar conmigo o saber más? Escribime a <a href="mailto:mica@email.com">mica@email.com</a> o contactame por <a href="https://www.linkedin.com/in/micasolimine/" target="_blank">LinkedIn</a>.</p>
+  </section>
+
+</div>
